@@ -35,5 +35,7 @@ if [ -z "${awkFile}" ] || [ -z "${sedFile}" ] || [ -z "${inputFile}" ]; then
 	help
 fi
 
+`sed -f $sedFile $inputFile | awk -f $awkFile > arryn_hw3.out`
+cat "arryn_hw3.out"
 
 exit 0

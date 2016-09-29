@@ -1,7 +1,7 @@
 
 me=`basename "$0"`
 
-help() { printf "Usage: $me"; exit 0; }
+help() { printf "Usage: $me -s sedsrc -a awksrc -i inputFile\n"; exit 0; }
 
 # parse arguments
 awkFile=""

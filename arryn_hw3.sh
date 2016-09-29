@@ -9,7 +9,7 @@ sedFile=""
 inputFile=""
 
 # check for --help
-if [ $1 == "--help" ]; then
+if [ "$1" == "--help" ]; then
 	help
 fi
 

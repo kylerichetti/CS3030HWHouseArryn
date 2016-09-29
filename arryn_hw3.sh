@@ -8,6 +8,11 @@ awkFile=""
 sedFile=""
 inputFile=""
 
+# check for --help
+if [ $1 == "--help" ]; then
+	help
+fi
+
 while getopts "a:s:i:" o; do
 	case "${o}" in
 		a)
@@ -20,7 +25,6 @@ while getopts "a:s:i:" o; do
 			inputFile=${OPTARG}
 			;;
 		*)
-			echo "invalid arg"
 			help
 			;;
 	esac

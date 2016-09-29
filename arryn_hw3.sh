@@ -27,7 +27,7 @@ while getopts "a:s:i:" o; do
 done
 
 # check that all arguments were given
-if [ -z "${awkFile}" ] || [ -z "${sedFile}" ]; || [ -z "${inputFile}" ] then
+if [ -z "${awkFile}" ] || [ -z "${sedFile}" ] || [ -z "${inputFile}" ]; then
 	help
 fi
 
